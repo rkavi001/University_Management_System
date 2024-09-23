@@ -9,3 +9,9 @@ Features:
 3.Search student data by ID
 4.Update student data (subject)
 5.Delete student data by ID
+
+Requirements:
+
+1.MySQL: Ensure that MySQL is installed and running on your machine. You'll also need to create a database and table for storing student data.
+2.C++: A C++ compiler, such as g++, is required to compile the program.
+3.MySQL Connector/C++: The MySQL connector must be installed for C++ to allow communication between the C++ application and the MySQL database.
