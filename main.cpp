@@ -34,8 +34,7 @@ class University{
 	CGPA= cgpa;
  }	
  
- //getter fucntions
- 
+ //getter fucntion
  int getId(){
  	return Id;
  }
