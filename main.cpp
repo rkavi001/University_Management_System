@@ -57,34 +57,26 @@ insertS(MYSQL* conn, University u){
 	 int id;
  string name,subject;
  float cgpa;
- 
  cout<<"Enter Id: ";
  cin>>id;
  u.setId(id);
- 
-  cout<<"Enter Name: ";
+ cout<<"Enter Name: ";
  cin>>name;
  u.setName(name);
-
  cout<<"Enter Subject: ";
  cin>>subject;
  u.setSubject(subject);
-
  cout<<"Enter CGPA: ";
  cin>>cgpa;
  u.setGrade(cgpa);
- 
  int iId= u.getId();
  float fGrade = u.getGrade();
- 
  stringstream ss;
  ss<<iId;
  string sId = ss.str();
- 
-  stringstream as;
+ stringstream as;
  as<<fGrade;
  string sGrade= as.str();
- 
  string ins= "INSERT INTO student (Id, Name, Subject, CGPA) VALUES ('"+sId+"', '"+u.getName()+"', '"+u.getSubject()+"', '"+sGrade+"')";
  if(mysql_query(conn,ins.c_str())){
  	cout<<"Error: "<<mysql_error(conn)<<endl;
